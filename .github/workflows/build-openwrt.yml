@@ -46,8 +46,8 @@ jobs:
         /bin/bash ${GITHUB_WORKSPACE}/before_build.sh
         cp -fpR ${GITHUB_WORKSPACE}/. /home/runner/immortalwrt/
 
-  #  - name: SSH connection to Actions
-  #    uses: csexton/debugger-action@master
+ #  - name: SSH connection to Actions
+ #    uses: csexton/debugger-action@master
 
     - name: Start Build
       run: | 
