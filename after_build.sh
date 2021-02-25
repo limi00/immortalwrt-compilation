@@ -10,6 +10,6 @@ svn co https://github.com/limi00/sirpdboy-package/trunk/luci-app-ddnsto package/
 svn co https://github.com/limi00/sirpdboy-package/trunk/luci-app-autotimeset package/diy/luci-app-autotimeset
 svn co https://github.com/limi00/sirpdboy-package/trunk/luci-app-control-weburl package/diy/luci-app-control-weburl
 svn co https://github.com/linkease/ddnsto-openwrt/trunk/ddnsto package/network/services/ddnsto
-svn co https://github.com/linkease/ddnsto-openwrt/tree/main/luci-app-ddnsto package/diy/luci-app-ddnsto
+svn co https://github.com/linkease/ddnsto-openwrt/trunk/luci-app-ddnsto package/diy/luci-app-ddnsto
 
 # echo "Success!"
