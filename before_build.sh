@@ -16,7 +16,7 @@ rm -rf package/lean/luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 
 # 更改默认主题为Argon
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+# sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # 替换更新adguardhome
 rm -rf package/ctcgfw/luci-app-adguardhome/ && git clone https://github.com/limi00/luci-app-adguardhome.git package/ctcgfw/luci-app-adguardhome
@@ -27,5 +27,8 @@ rm -rf package/ctcgfw/luci-app-adguardhome/ && git clone https://github.com/limi
 # 删除默认密码
 # sed -i "/CYXluq4wUazHjmCDBCqXF/d" package/lean/default-settings/files/zzz-default-settings
 
-echo "Start build!"
+sed -i 's/bootstrap/argon/g' feeds/luci/collections/luci/Makefile
+# Enter your commands here, e.g.
+# echo "Start build!"
 make defconfig
+make download -j8 V=s
