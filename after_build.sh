@@ -3,6 +3,12 @@ cd /home/runner/immortalwrt
 
 # Enter your commands here, e.g.
 
+# Add a feed source
+# echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+
+# # Define My Package
 # git clone https://github.com/immortalwrt/openwrt-passwall.git package/diy/luci-app-passwall
 # git clone https://github.com/xiaorouji/openwrt-passwall.git package/diy/luci-app-passwall
 # git clone https://github.com/tty228/luci-app-serverchan.git package/diy/luci-app-serverchan
