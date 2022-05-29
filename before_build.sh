@@ -18,8 +18,6 @@ git clone -b master https://github.com/jerrykuku/luci-theme-argon.git package/le
 # 更改默认主题为Argon
 # sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
-sed -i 's/bootstrap/argon/g' feeds/luci/collections/luci/Makefile
-
 # 替换更新adguardhome
 # rm -rf package/ctcgfw/luci-app-adguardhome/ && git clone https://github.com/limi00/luci-app-adguardhome.git package/ctcgfw/luci-app-adguardhome
 
