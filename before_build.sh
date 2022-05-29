@@ -13,7 +13,7 @@ sed -i 's/ImmortalWrt/XiaomiR3G/g' package/base-files/files/bin/config_generate
 rm -rf package/lean/luci-theme-argon
 
 # 添加新的主题
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
+git clone -b master https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 
 # 更改默认主题为Argon
 # sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
