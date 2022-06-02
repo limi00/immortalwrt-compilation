@@ -7,16 +7,16 @@ cd /home/runner/immortalwrt
 sed -i 's/192.168.1.1/192.168.31.1/g' package/base-files/files/bin/config_generate
 
 # 设置主机名称
-sed -i 's/ImmortalWrt/XiaomiR3G/g' package/base-files/files/bin/config_generate
+sed -i 's/ImmortalWrt/Xiao_MiR3G/g' package/base-files/files/bin/config_generate
 
 # 删除原主题
-rm -rf package/lean/luci-theme-argon
+# rm -rf package/lean/luci-theme-argon
 
 # 添加新的主题
-git clone -b master https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
+# git clone -b master https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 
 # 更改默认主题为Argon
-# sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # 替换更新adguardhome
 # rm -rf package/ctcgfw/luci-app-adguardhome/ && git clone https://github.com/limi00/luci-app-adguardhome.git package/ctcgfw/luci-app-adguardhome
