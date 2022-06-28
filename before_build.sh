@@ -9,6 +9,9 @@ sed -i 's/192.168.1.1/192.168.31.1/g' package/base-files/files/bin/config_genera
 # 设置主机名称
 sed -i 's/ImmortalWrt/XiaoMi_R3G/g' package/base-files/files/bin/config_generate
 
+# 修改默认 SSID
+sed -i 's/OpenWrt/Xiaomi_DC08/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+
 # 删除原主题
 # rm -rf package/lean/luci-theme-argon
 
