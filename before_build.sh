@@ -10,7 +10,7 @@ sed -i 's/192.168.1.1/192.168.31.1/g' package/base-files/files/bin/config_genera
 sed -i 's/ImmortalWrt/XiaoMi_R3G/g' package/base-files/files/bin/config_generate
 
 # 修改默认 SSID
-sed -i 's/OpenWrt/Xiaomi_DC08/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+# sed -i 's/OpenWrt/Xiaomi_DC08/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # 删除原主题
 # rm -rf package/lean/luci-theme-argon
@@ -19,7 +19,7 @@ sed -i 's/OpenWrt/Xiaomi_DC08/g' package/kernel/mac80211/files/lib/wifi/mac80211
 # git clone -b master https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 
 # 更改默认主题为Argon
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+# sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # 替换更新adguardhome
 # rm -rf package/ctcgfw/luci-app-adguardhome/ && git clone https://github.com/limi00/luci-app-adguardhome.git package/ctcgfw/luci-app-adguardhome
